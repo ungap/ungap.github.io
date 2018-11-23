@@ -34,7 +34,7 @@ If you need that, which again is basically impossible in most of the cases, feel
 
 ## Currently available
 
-  * [@ungap/event](https://github.com/ungap/custom-event) compatible with all browsers
+  * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine

@@ -23,7 +23,7 @@ The constrains per module are the following:
   
 <sup><sub>[1]</sub></sup> <sup><sub>as example: [stripped out features detections](https://twitter.com/WebReflection/status/1065665486233448449)</sub></sup>
 
-#### **⚠** Pragmatic is better than <sup><sub>(im)</sub></sup>perfect
+#### **⚠** Pragmatic is better than <sub><sup>(im)</sup></sub>perfect
 
 There are parts of the specifications that are very hard, if not impossible, to polyfill.
 The main purpose of this project is to help developers move forward, and possibly without unnecessary bloat.
@@ -34,6 +34,7 @@ If you need that, which again is basically impossible in most of the cases, feel
 
 ## Currently available
 
+  * [@ungap/event](https://github.com/ungap/custom-event) compatible with all browsers
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine

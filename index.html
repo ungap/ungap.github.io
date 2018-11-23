@@ -46,6 +46,17 @@ The constrains per module are the following:</p>
 The main purpose of this project is to help developers move forward, and possibly without unnecessary bloat.
 This basically means that polyfills are written to support 99% of the use cases, without granting 100% spec compliance.</p>
 <p>If you need that, which again is basically impossible in most of the cases, feel free to keep using whatever monolithic polyfill or approach you were using before.</p>
+<h2 id="howtouseamodule">How to use a module</h2>
+<p>Every single module is made available as ESM, through the <code>package.json</code>'s <code>module</code> field, CJS via <code>package.json</code>'s <code>main</code> field, and browser script polyfill / patch via <code>package.json</code>'s <code>unpkg</code> field so that you can use directly the <a href="https://unpkg.com/#/">unpkg CDN</a>.</p>
+<pre><code class="js language-js">// as ECMAScript module
+import WeakSet from 'https://unpkg.com/@ungap/weakset';
+
+// as CommonJS module
+const WeakSet = require('@ungap/weakset');
+
+// as Browser global patch
+&lt;script src="https://unpkg.com/@ungap/weakset"&gt;&lt;/script&gt;
+</code></pre>
 <h2 id="essentiallyavailable">Essentially available</h2>
 <p>Essentials modules covers most common use cases without going full bloated API.
 As example, the <a href="https://unpkg.com/@ungap/essential-map">essential-map</a> exposes only <code>get</code>, <code>set</code>, <code>delete</code>, and <code>has</code> which is most of the time everything one needs, as opposite of going full <a href="https://unpkg.com/@ungap/map">map</a>.
@@ -68,17 +79,6 @@ The main benefit of the essential modules is their size, simplicity, or even per
 <li><a href="https://github.com/ungap/weakmap">@ungap/weakmap</a> compatible with all JS engine</li>
 <li><a href="https://github.com/ungap/weakset">@ungap/weakset</a> compatible with any engine that already has a <code>WeakMap</code> (i.e. <em>IE11+</em>)</li>
 </ul>
-<h2 id="howtouseamodule">How to use a module</h2>
-<p>Every single module is made available as ESM, through the <code>package.json</code>'s <code>module</code> field, CJS via <code>package.json</code>'s <code>main</code> field, and browser script polyfill / patch via <code>package.json</code>'s <code>unpkg</code> field so that you can use directly the <a href="https://unpkg.com/#/">unpkg CDN</a>.</p>
-<pre><code class="js language-js">// as ECMAScript module
-import WeakSet from 'https://unpkg.com/@ungap/weakset';
-
-// as CommonJS module
-const WeakSet = require('@ungap/weakset');
-
-// as Browser global patch
-&lt;script src="https://unpkg.com/@ungap/weakset"&gt;&lt;/script&gt;
-</code></pre>
 <h2 id="license">License</h2>
 <p>Each module is under the <a href="https://www.npmjs.com">npm</a> default <a href="https://opensource.org/licenses/ISC">ISC</a> license.</p>
 <h2 id="howtocontribute">How to contribute</h2>

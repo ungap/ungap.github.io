@@ -35,6 +35,22 @@ This basically means that polyfills are written to support 99% of the use cases,
 If you need that, which again is basically impossible in most of the cases, feel free to keep using whatever monolithic polyfill or approach you were using before.
 
 
+## How to use a module
+
+Every single module is made available as ESM, through the `package.json`'s `module` field, CJS via `package.json`'s `main` field, and browser script polyfill / patch via `package.json`'s `unpkg` field so that you can use directly the [unpkg CDN](https://unpkg.com/#/).
+
+```js
+// as ECMAScript module
+import WeakSet from 'https://unpkg.com/@ungap/weakset';
+
+// as CommonJS module
+const WeakSet = require('@ungap/weakset');
+
+// as Browser global patch
+<script src="https://unpkg.com/@ungap/weakset"></script>
+```
+
+
 ## Essentially available
 
 Essentials modules covers most common use cases without going full bloated API.
@@ -58,22 +74,6 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engine
   * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engine
   * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
-
-
-## How to use a module
-
-Every single module is made available as ESM, through the `package.json`'s `module` field, CJS via `package.json`'s `main` field, and browser script polyfill / patch via `package.json`'s `unpkg` field so that you can use directly the [unpkg CDN](https://unpkg.com/#/).
-
-```js
-// as ECMAScript module
-import WeakSet from 'https://unpkg.com/@ungap/weakset';
-
-// as CommonJS module
-const WeakSet = require('@ungap/weakset');
-
-// as Browser global patch
-<script src="https://unpkg.com/@ungap/weakset"></script>
-```
 
 
 ## License

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ungap</title>
+  <!--[if lt IE 9]>
+    <script src="https://unpkg.com/ie8"></script>
+    <script defer src="https://unpkg.com/dom4"></script>
+  <![endif]-->
+  <script defer src="js/index.js"></script>
+  <link rel="styleSheet" href="css/index.css">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+</head>
+<body>
+  <h1 id="ungap">ungap</h1>
+<p>Modern Web development one jump at the time</p>
+<p><img src="img/denny-luan-crop.jpg" alt="jumping the gap" />
+<sup><strong>Photo by <a href="https://unsplash.com/photos/ovm_b91yEgY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Denny Luan</a> on <a href="https://unsplash.com/search/photos/gap-landscape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></strong></sup></p>
+<h2 id="about">About</h2>
+<p>The <a href="https://github.com/ungap">ungap organization</a> was born after <a href="https://github.com/WebReflection/es6-collections">years</a> of <a href="https://github.com/WebReflection/poorlyfills">attempts</a> to always fix <a href="https://www.npmjs.com/search?q=weakmap">the</a> <a href="https://www.npmjs.com/search?q=weakset">same</a> <a href="https://www.npmjs.com/search?q=ES%20Map">issue</a>, but never in a modular way and, most importantly, never in a single, 100% code covered, repository.</p>
+<h3 id="focusedonsizecompatibilityandquality">Focused on size, compatibility, and quality</h3>
+<p>Each module is written in ES5 compatible syntax to avoid both unnecessary transpilers bloat and potentially unexpected behaviors.
+Each module is also 100% code-covered through tests able to verify the whole API both as native and polyfilled version.
+The constrains per module are the following:</p>
+<ul>
+<li>NodeJS, ESM, Worker, and Web compatibility</li>
+<li>easy to read and maintain ES5 syntax, keeping the code size in mind</li>
+<li>mandatory 100% code coverage through all possible NodeJS hacks to ensure every part of the code that has a meaning works as expected (some meaningless part can be skipped but functionalities must be ensured)</li>
+<li>every module is stand-alone, allowing incremental patch or polyfilling</li>
+<li>modules should be bundlers and transpilers resistant to avoid any possible, production code, surprise <sup><sub>[1]</sub></sup></li>
+</ul>
+<p><sup><sub>[1]</sub></sup> <sup><sub>as example: <a href="https://twitter.com/WebReflection/status/1065665486233448449">stripped out features detections</a></sub></sup></p>
+<h2 id="currentlyavailable">Currently available</h2>
+<ul>
+<li><a href="https://github.com/ungap/essential-map">@ungap/essential-map</a> with only common method</li>
+<li><a href="https://github.com/ungap/essential-set">@ungap/essential-set</a> with only common method</li>
+<li><a href="https://github.com/ungap/essential-weakset">@ungap/essential-weakset</a> with simpler logic but widely compatible</li>
+<li><a href="https://github.com/ungap/event">@ungap/event</a> with double fallback through <code>CustomEvent</code></li>
+<li><a href="https://github.com/ungap/is-array">@ungap/is-array</a> compatible with all JS engine</li>
+<li><a href="https://github.com/ungap/map">@ungap/map</a> compatible with all JS engine</li>
+<li><a href="https://github.com/ungap/set">@ungap/set</a> compatible with all JS engine</li>
+<li><a href="https://github.com/ungap/trim">@ungap/trim</a> compatible with all JS engine</li>
+<li><a href="https://github.com/ungap/weakmap">@ungap/weakmap</a> compatible with all JS engine</li>
+<li><a href="https://github.com/ungap/weakset">@ungap/weakset</a> compatible with any engine that already has a <code>WeakMap</code> (i.e. <em>IE11+</em>)</li>
+</ul>
+<h2 id="howtouse">How to use</h2>
+<p>Every single module is made available as ESM, through the <code>package.json</code>'s <code>module</code> field, CJS via <code>package.json</code>'s <code>main</code> field, and browser script polyfill / patch via <code>package.json</code>'s <code>unpkg</code> field so that you can use directly the <a href="https://unpkg.com/#/">unpkg CDN</a>.</p>
+<pre><code class="js language-js">// as ECMAScript module
+import WeakSet from 'https://unpkg.com/@ungap/weakset';
+
+// as CommonJS module
+const WeakSet = require('@ungap/weakset');
+
+// as Browser global patch
+&lt;script src="https://unpkg.com/@ungap/weakset"&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="license">License</h2>
+<p>Each module is under the <a href="https://www.npmjs.com">npm</a> default <a href="https://opensource.org/licenses/ISC">ISC</a> license.</p>
+<h2 id="howtocontribute">How to contribute</h2>
+<p>You are welcome to join the organization after your first module is published.</p>
+<p>In order to do so, please take any already available module as example of how to create and test any code you need.</p>
+<p>The main guideline though, can be summarized as such:</p>
+<ul>
+<li>the entry point is the root <code>./index.js</code></li>
+<li>the ESM module is generated in <code>./esm/index.js</code></li>
+<li>the CJS module is generated in <code>./cjs/index.js</code></li>
+<li>you cannot use any transpiler</li>
+<li>you might use some bundler as long as the tested code is the one generated by such bundler</li>
+</ul>
+<p>I have personally no interest in enforcing any specific linting rule or code style, as long as common sense and good practices are part of the code.</p>
+<p>If these basic constrains are good enough for you, please do help this project grow, allowing the community to leave all monolithic polyfills part of the past.</p>
+<p>If you have further questions, you can DM me <a href="https://twitter.com/WebReflection">@webreflection</a> <sup><sub>[1]</sub></sup></p>
+<p><sup><sub>[1]</sub></sup> <sup><sub>my DMs are open</sub></sup></p>
+<hr />
+  <script onload="hljs.initHighlightingOnLoad()"
+          src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+</body>
+</html>

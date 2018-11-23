@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "ungap.github.io",
+  "description": "The ungap landing page.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungap/ungap.github.io.git"
+  },
+  "keywords": [],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ungap/ungap.github.io/issues"
+  },
+  "homepage": "https://github.com/ungap/ungap.github.io#readme",
+  "devDependencies": {
+    "showdown": "^1.9.0"
+  }
+}

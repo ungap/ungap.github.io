@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 8px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+h1 + p:before, h1 + p:after {
+  font-weight: bold;
+  margin: 8px;
+}
+
+h1 + p {
+  display: inline-block;
+  opacity: 0.7;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+body {
+  max-width: 920px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 360px) {
+  h1 + p:before {
+    content: '[';
+  }
+  h1 + p:after {
+    content: ']';
+  }
+}

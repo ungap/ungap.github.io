@@ -46,7 +46,16 @@ The constrains per module are the following:</p>
 The main purpose of this project is to help developers move forward, and possibly without unnecessary bloat.
 This basically means that polyfills are written to support 99% of the use cases, without granting 100% spec compliance.</p>
 <p>If you need that, which again is basically impossible in most of the cases, feel free to keep using whatever monolithic polyfill or approach you were using before.</p>
-<h2 id="currentlyavailable">Currently available</h2>
+<h2 id="essentiallyavailable">Essentially available</h2>
+<p>Essentials modules covers most common use cases without going full bloated API.
+As example, the <a href="https://unpkg.com/@ungap/essential-map">essential-map</a> exposes only <code>get</code>, <code>set</code>, <code>delete</code>, and <code>has</code> which is most of the time everything one needs, as opposite of going full <a href="https://unpkg.com/@ungap/map">map</a>.
+The main benefit of the essential modules is their size, simplicity, or even performance.</p>
+<ul>
+<li><a href="https://github.com/ungap/essential-map">@ungap/essential-map</a> with only common method</li>
+<li><a href="https://github.com/ungap/essential-set">@ungap/essential-set</a> with only common method</li>
+<li><a href="https://github.com/ungap/essential-weakset">@ungap/essential-weakset</a> with simpler logic but widely compatible</li>
+</ul>
+<h2 id="fullyavailable">Fully available</h2>
 <ul>
 <li><a href="https://github.com/ungap/array-iterator">@ungap/array-iterator</a> compatible with all engines that have a global <code>Symbol</code></li>
 <li><a href="https://github.com/ungap/custom-event">@ungap/custom-event</a> compatible with all browsers</li>
@@ -57,15 +66,6 @@ This basically means that polyfills are written to support 99% of the use cases,
 <li><a href="https://github.com/ungap/trim">@ungap/trim</a> compatible with all JS engine</li>
 <li><a href="https://github.com/ungap/weakmap">@ungap/weakmap</a> compatible with all JS engine</li>
 <li><a href="https://github.com/ungap/weakset">@ungap/weakset</a> compatible with any engine that already has a <code>WeakMap</code> (i.e. <em>IE11+</em>)</li>
-</ul>
-<h2 id="essentiallyavailable">Essentially available</h2>
-<p>Essentials modules covers most common use cases without going full bloated API.
-As example, the <a href="https://unpkg.com/@ungap/essential-map">essential-map</a> exposes only <code>get</code>, <code>set</code>, <code>delete</code>, and <code>has</code> which is most of the time everything one needs, as opposite of going full <a href="https://unpkg.com/@ungap/map">map</a>.
-The main benefit of the essential modules is their size, simplicity, or even performance.</p>
-<ul>
-<li><a href="https://github.com/ungap/essential-map">@ungap/essential-map</a> with only common method</li>
-<li><a href="https://github.com/ungap/essential-set">@ungap/essential-set</a> with only common method</li>
-<li><a href="https://github.com/ungap/essential-weakset">@ungap/essential-weakset</a> with simpler logic but widely compatible</li>
 </ul>
 <h2 id="howtouseamodule">How to use a module</h2>
 <p>Every single module is made available as ESM, through the <code>package.json</code>'s <code>module</code> field, CJS via <code>package.json</code>'s <code>main</code> field, and browser script polyfill / patch via <code>package.json</code>'s <code>unpkg</code> field so that you can use directly the <a href="https://unpkg.com/#/">unpkg CDN</a>.</p>

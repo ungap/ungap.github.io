@@ -5,9 +5,11 @@ Modern Web development one jump at the time
 ![jumping the gap](img/denny-luan-crop.jpg)
 <sup>**Photo by [Denny Luan](https://unsplash.com/photos/ovm_b91yEgY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/gap-landscape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)**</sup>
 
+
 ## About
 
 The [ungap project](https://github.com/ungap) was born after [years](https://github.com/WebReflection/es6-collections) of [attempts](https://github.com/WebReflection/poorlyfills) to always fix [the](https://www.npmjs.com/search?q=weakmap) [same](https://www.npmjs.com/search?q=weakset) [issue](https://www.npmjs.com/search?q=ES%20Map), but never in a modular way and, most importantly, never in a single, 100% code covered, **organization**.
+
 
 ### Focused on size, compatibility, and quality
 
@@ -23,6 +25,7 @@ The constrains per module are the following:
   
 <sup><sub>[1]</sub></sup> <sup><sub>as example: [stripped out features detections](https://twitter.com/WebReflection/status/1065665486233448449)</sub></sup>
 
+
 #### **⚠** Pragmatic is better than <sub><sup>(im)</sup></sub>perfect
 
 There are parts of the specifications that are very hard, if not impossible, to polyfill.
@@ -31,18 +34,6 @@ This basically means that polyfills are written to support 99% of the use cases,
 
 If you need that, which again is basically impossible in most of the cases, feel free to keep using whatever monolithic polyfill or approach you were using before.
 
-
-## Currently available
-
-  * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`
-  * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
-  * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
-  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
-  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine
-  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engine
-  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engine
-  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engine
-  * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
 
 ## Essentially available
 
@@ -53,6 +44,19 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method
   * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method
   * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
+
+
+## Fully available
+
+  * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`
+  * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
+  * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
+  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
+  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine
+  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engine
+  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engine
+  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engine
+  * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
 
 
 ## How to use a module
@@ -70,9 +74,11 @@ const WeakSet = require('@ungap/weakset');
 <script src="https://unpkg.com/@ungap/weakset"></script>
 ```
 
+
 ## License
 
 Each module is under the [npm](https://www.npmjs.com) default [ISC](https://opensource.org/licenses/ISC) license.
+
 
 ## How to contribute
 

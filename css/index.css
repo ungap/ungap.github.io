@@ -21,7 +21,14 @@ h1 + p {
   display: inline-block;
   opacity: 0.7;
   font-size: 0.8em;
+}
+
+h2, h3, h4, h5, h1 + p {
   text-transform: capitalize;
+}
+
+sup, sub {
+  text-transform: initial;
 }
 
 body {

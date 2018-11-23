@@ -23,11 +23,17 @@ The constrains per module are the following:
   
 <sup><sub>[1]</sub></sup> <sup><sub>as example: [stripped out features detections](https://twitter.com/WebReflection/status/1065665486233448449)</sub></sup>
 
+#### **⚠** Pragmatic is better than <sup><sub>(im)</sub></sup>perfect
+
+There are parts of the specifications that are very hard, if not impossible, to polyfill.
+The main purpose of this project is to help developers move forward, and possibly without unnecessary bloat.
+This basically means that polyfills are written to support 99% of the use cases, without granting 100% spec compliance.
+
+If you need that, which again is basically impossible in most of the cases, feel free to keep using whatever monolithic polyfill or approach you were using before.
+
+
 ## Currently available
 
-  * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method
-  * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method
-  * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine
@@ -36,7 +42,18 @@ The constrains per module are the following:
   * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engine
   * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
 
-## How to use
+## Essentially available
+
+Essentials modules covers most common use cases without going full bloated API.
+As example, the [essential-map](https://unpkg.com/@ungap/essential-map) exposes only `get`, `set`, `delete`, and `has` which is most of the time everything one needs, as opposite of going full [map](https://unpkg.com/@ungap/map).
+The main benefit of the essential modules is their size, simplicity, or even performance.
+
+  * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method
+  * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method
+  * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
+
+
+## How to use a module
 
 Every single module is made available as ESM, through the `package.json`'s `module` field, CJS via `package.json`'s `main` field, and browser script polyfill / patch via `package.json`'s `unpkg` field so that you can use directly the [unpkg CDN](https://unpkg.com/#/).
 

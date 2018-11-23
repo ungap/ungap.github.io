@@ -7,7 +7,7 @@ Modern Web development one jump at the time
 
 ## About
 
-The [ungap organization](https://github.com/ungap) was born after [years](https://github.com/WebReflection/es6-collections) of [attempts](https://github.com/WebReflection/poorlyfills) to always fix [the](https://www.npmjs.com/search?q=weakmap) [same](https://www.npmjs.com/search?q=weakset) [issue](https://www.npmjs.com/search?q=ES%20Map), but never in a modular way and, most importantly, never in a single, 100% code covered, repository.
+The [ungap project](https://github.com/ungap) was born after [years](https://github.com/WebReflection/es6-collections) of [attempts](https://github.com/WebReflection/poorlyfills) to always fix [the](https://www.npmjs.com/search?q=weakmap) [same](https://www.npmjs.com/search?q=weakset) [issue](https://www.npmjs.com/search?q=ES%20Map), but never in a modular way and, most importantly, never in a single, 100% code covered, **organization**.
 
 ### Focused on size, compatibility, and quality
 

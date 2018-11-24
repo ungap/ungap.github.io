@@ -65,6 +65,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
 ## Fully available
 
   * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`
+  * [@ungap/custom-elements-builtin](https://github.com/ungap/custom-elements-builtin) compatible with browsers that already have `customElements` (i.e. Safari)
   * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
   * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`

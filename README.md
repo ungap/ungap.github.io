@@ -69,11 +69,12 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
   * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
-  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engine
-  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engine
-  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engine
-  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engine
-  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engine
+  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines
+  * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global
+  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines
+  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines
+  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines
+  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines
   * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
 
 

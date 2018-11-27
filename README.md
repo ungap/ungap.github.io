@@ -59,6 +59,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
 
   * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method
   * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method
+  * [@ungap/essential-symbol](https://github.com/ungap/essential-symbol) providing just its uniqueness
   * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
 
 

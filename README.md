@@ -51,7 +51,7 @@ const WeakSet = require('@ungap/weakset');
 ```
 
 
-## Essentially available
+## Essential polyfills
 
 Essentials modules covers most common use cases without going full bloated API.
 As example, the [essential-map](https://unpkg.com/@ungap/essential-map) exposes only `get`, `set`, `delete`, and `has` which is most of the time everything one needs, as opposite of going full [map](https://unpkg.com/@ungap/map).
@@ -62,7 +62,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
 
 
-## Fully available
+## Regular polyfills
 
   * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`
   * [@ungap/custom-elements-builtin](https://github.com/ungap/custom-elements-builtin) compatible with browsers that already have `customElements` (i.e. Safari)
@@ -77,6 +77,13 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/url-search-params](https://github.com/ungap/url-search-params) compatible with all JS engines
   * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines
   * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
+
+
+## Polyfilled utilities
+
+Ungap utilities are mant to simplify cross browser development without the bloat of a whole polyfill.
+
+  * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>
 
 
 ## License

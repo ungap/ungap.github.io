@@ -49,7 +49,7 @@ This basically means that polyfills are written to support 99% of the use cases,
 <h2 id="howtouseamodule">How to use a module</h2>
 <p>Every single module is made available as ESM, through the <code>package.json</code>'s <code>module</code> field, CJS via <code>package.json</code>'s <code>main</code> field, and browser script polyfill / patch via <code>package.json</code>'s <code>unpkg</code> field so that you can use directly the <a href="https://unpkg.com/#/">unpkg CDN</a>.</p>
 <pre><code class="js language-js">// as ECMAScript module
-import WeakSet from 'https://unpkg.com/@ungap/weakset';
+import WeakSet from '@ungap/weakset';
 
 // as CommonJS module
 const WeakSet = require('@ungap/weakset');

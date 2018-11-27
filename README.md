@@ -41,7 +41,7 @@ Every single module is made available as ESM, through the `package.json`'s `modu
 
 ```js
 // as ECMAScript module
-import WeakSet from 'https://unpkg.com/@ungap/weakset';
+import WeakSet from '@ungap/weakset';
 
 // as CommonJS module
 const WeakSet = require('@ungap/weakset');

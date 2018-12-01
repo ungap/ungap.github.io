@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node create-index",
     "postinstall": "npm test",
-    "test": "npm run watch & http-server",
+    "test": "node create-index",
+    "test-live": "npm run watch & http-server",
     "watch": "watch 'node create-index' .",
     "update": "npm run build && git add . && git commit -m 'update' && git pull --rebase && git push"
   },

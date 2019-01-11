@@ -79,6 +79,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines
   * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines
   * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines
+  * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines
   * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines
   * [@ungap/url-search-params](https://github.com/ungap/url-search-params) compatible with all JS engines
   * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines

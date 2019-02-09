@@ -94,6 +94,16 @@ Ungap utilities are mant to simplify cross browser development without the bloat
   * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>
 
 
+## How to exclude these modules
+
+Sometimes you are building a target only for modern browsers, in which case you may
+want to eliminate many of the `@ungap` modules from your bundle.  This can be accomplished
+with [babel-plugin-remove-ungap](https://github.com/cfware/babel-plugin-remove-ungap#readme).
+
+lighterhtml uses this babel plugin to create a "pure ES" bundle of lighterhtml, see
+[rollup config](https://github.com/WebReflection/lighterhtml/blob/master/es.config.js).
+
+
 ## License
 
 Each module is under the [npm](https://www.npmjs.com) default [ISC](https://opensource.org/licenses/ISC) license.

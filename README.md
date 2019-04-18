@@ -74,6 +74,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
   * [@ungap/event-target](https://github.com/ungap/event-target) compatible with all JS engines
   * [@ungap/from-entries](https://github.com/ungap/from-entries) compatible with all JS engines
+  * [@ungap/global-this](https://github.com/ungap/global-this) compatible with all JS engines
   * [@ungap/import-node](https://github.com/ungap/import-node) compatible with all JS engines
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines
   * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global

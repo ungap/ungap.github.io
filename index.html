@@ -93,9 +93,15 @@ The main benefit of the essential modules is their size, simplicity, or even per
 <li><a href="https://github.com/ungap/weakset">@ungap/weakset</a> compatible with any engine that already has a <code>WeakMap</code> (i.e. <em>IE11+</em>)</li>
 </ul>
 <h2 id="polyfilledutilities">Polyfilled utilities</h2>
-<p>Ungap utilities are mant to simplify cross browser development without the bloat of a whole polyfill.</p>
+<p>Ungap utilities are meant to simplify cross browser development without the bloat of a whole polyfill.</p>
 <ul>
 <li><a href="https://github.com/ungap/create-content">@ungap/create-content</a> compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup></li>
+</ul>
+<h2 id="pluginstoremoveunnecessarybloat">Plugins to remove unnecessary bloat</h2>
+<p>If you are targeting modern browsers only, you might want to exclude some unnecessary code from various ungapped APIs.</p>
+<p>Following a list of plugins which aim is to address those cases:</p>
+<ul>
+<li><a href="https://github.com/cfware/babel-plugin-remove-ungap">babel-plugin-remove-ungap</a> provides the ability to arbitrarily exclude polyfills through tree-shaking, an awesome tool from <a href="https://github.com/coreyfarrell">coreyfarrell</a> ♥</li>
 </ul>
 <h2 id="license">License</h2>
 <p>Each module is under the <a href="https://www.npmjs.com">npm</a> default <a href="https://opensource.org/licenses/ISC">ISC</a> license.</p>

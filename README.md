@@ -91,9 +91,17 @@ The main benefit of the essential modules is their size, simplicity, or even per
 
 ## Polyfilled utilities
 
-Ungap utilities are mant to simplify cross browser development without the bloat of a whole polyfill.
+Ungap utilities are meant to simplify cross browser development without the bloat of a whole polyfill.
 
   * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>
+
+## Plugins to remove unnecessary bloat
+
+If you are targeting modern browsers only, you might want to exclude some unnecessary code from various ungapped APIs.
+
+Following a list of plugins which aim is to address those cases:
+
+  * [babel-plugin-remove-ungap](https://github.com/cfware/babel-plugin-remove-ungap) provides the ability to arbitrarily exclude polyfills through tree-shaking, an awesome tool from [coreyfarrell](https://github.com/coreyfarrell) ♥
 
 
 ## License

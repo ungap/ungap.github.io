@@ -102,6 +102,7 @@ If you are targeting modern browsers only, you might want to exclude some unnece
 Following a list of plugins which aim is to address those cases:
 
   * [babel-plugin-remove-ungap](https://github.com/cfware/babel-plugin-remove-ungap) provides the ability to arbitrarily exclude polyfills through tree-shaking, an awesome tool from [coreyfarrell](https://github.com/coreyfarrell) ♥
+  * [@ungap/degap](https://github.com/ungap/degap#ungapdegap) to make any module either a no-op, just the native version, or the simplified utility (as in element-matches case)
 
 
 ## License

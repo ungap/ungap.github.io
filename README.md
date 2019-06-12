@@ -80,6 +80,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines
   * [@ungap/promise-any](https://github.com/ungap/promise-any) compatible with all JS engines
+  * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines
   * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines
   * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines
   * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines

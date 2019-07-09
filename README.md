@@ -87,6 +87,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines
   * [@ungap/url-search-params](https://github.com/ungap/url-search-params) compatible with all JS engines
   * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines
+  * [@ungap/weakrefs](https://github.com/ungap/weakrefs) `WeakRef` and `FinalizationGroup` compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
   * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
 
 

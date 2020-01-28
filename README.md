@@ -96,6 +96,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
 Ungap utilities are meant to simplify cross browser development without the bloat of a whole polyfill.
 
   * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>
+  * [@ungap/custom-elements-new](https://github.com/ungap/custom-elements-new#readme) to use `CustomElement.new()` instead of `new CustomElement()` due WebKit/Safari built-in extends caveat
 
 ## Plugins to remove unnecessary bloat
 

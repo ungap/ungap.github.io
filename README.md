@@ -17,7 +17,7 @@ Each module is written in ES5 compatible syntax to avoid both unnecessary transp
 Each module is also 100% code-covered through tests able to verify the whole API both as native and polyfilled version.
 The constrains per module are the following:
 
-  * NodeJS, ESM, Worker, and Web compatibility
+  * CommonJS, ESM, Worker, and Web compatibility
   * easy to read and maintain ES5 syntax, keeping the code size in mind
   * mandatory 100% code coverage through all possible NodeJS hacks to ensure every part of the code that has a meaning works as expected (some meaningless part can be skipped but functionalities must be ensured)
   * every module is stand-alone, allowing incremental patch or polyfilling

@@ -7,7 +7,6 @@
     "postinstall": "npm test",
     "test": "node create-index",
     "test-live": "npm run watch & http-server",
-    "watch": "watch 'node create-index' .",
     "update": "npm run build && git add . && git commit -m 'update' && git pull --rebase && git push"
   },
   "repository": {
@@ -22,8 +21,7 @@
   },
   "homepage": "https://github.com/ungap/ungap.github.io#readme",
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "showdown": "^1.9.0",
-    "watch": "^1.0.2"
+    "http-server": "^0.12.3",
+    "showdown": "^1.9.1"
   }
 }

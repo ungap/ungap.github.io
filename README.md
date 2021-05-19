@@ -76,6 +76,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/from-entries](https://github.com/ungap/from-entries) compatible with all JS engines
   * [@ungap/get-own-property-descriptors](https://github.com/ungap/get-own-property-descriptors) compatible with all JS engines
   * [@ungap/global-this](https://github.com/ungap/global-this) compatible with all JS engines
+  * [@ungap/has-own](https://github.com/ungap/has-own) compatible with all JS engines
   * [@ungap/import-node](https://github.com/ungap/import-node) compatible with all JS engines
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines
   * [@ungap/item](https://github.com/ungap/item) compatible with all JS engines

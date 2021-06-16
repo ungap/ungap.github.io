@@ -78,7 +78,9 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/global-this](https://github.com/ungap/global-this) compatible with all JS engines
   * [@ungap/has-own](https://github.com/ungap/has-own) compatible with all JS engines
   * [@ungap/import-node](https://github.com/ungap/import-node) compatible with all JS engines
+  * [@ungap/insert-after](https://github.com/ungap/insert-after) compatible with all JS engines
   * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines
+  * [@ungap/is-connected](https://github.com/ungap/is-connected) compatible with all JS engines
   * [@ungap/item](https://github.com/ungap/item) compatible with all JS engines
   * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines

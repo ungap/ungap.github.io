@@ -17,11 +17,11 @@ Each module is written in ES5 compatible syntax to avoid both unnecessary transp
 Each module is also 100% code-covered through tests able to verify the whole API both as native and polyfilled version.
 The constrains per module are the following:
 
-  * CommonJS, ESM, Worker, and Web compatibility
-  * easy to read and maintain ES5 syntax, keeping the code size in mind
-  * mandatory 100% code coverage through all possible NodeJS hacks to ensure every part of the code that has a meaning works as expected (some meaningless part can be skipped but functionalities must be ensured)
-  * every module is stand-alone, allowing incremental patch or polyfilling
-  * modules should be bundlers and transpilers resistant to avoid any possible, production code, surprise <sup><sub>[1]</sub></sup>
+  * CommonJS, ESM, Worker, and Web compatibility.
+  * easy to read and maintain ES5 syntax, keeping the code size in mind.
+  * mandatory 100% code coverage through all possible NodeJS hacks to ensure every part of the code that has a meaning works as expected (some meaningless part can be skipped but functionalities must be ensured).
+  * every module is stand-alone, allowing incremental patch or polyfilling.
+  * modules should be bundlers and transpilers resistant to avoid any possible, production code, surprise <sup><sub>[1]</sub></sup>.
   
 <sup><sub>[1]</sub></sup> <sup><sub>as example: [stripped out features detections](https://twitter.com/WebReflection/status/1065665486233448449)</sub></sup>
 
@@ -57,57 +57,58 @@ Essentials modules covers most common use cases without going full bloated API.
 As example, the [essential-map](https://unpkg.com/@ungap/essential-map) exposes only `get`, `set`, `delete`, and `has` which is most of the time everything one needs, as opposite of going full [map](https://unpkg.com/@ungap/map).
 The main benefit of the essential modules is their size, simplicity, or even performance.
 
-  * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method
-  * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method
-  * [@ungap/essential-symbol](https://github.com/ungap/essential-symbol) providing just its uniqueness
-  * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible
+  * [@ungap/essential-map](https://github.com/ungap/essential-map) with only common method.
+  * [@ungap/essential-set](https://github.com/ungap/essential-set) with only common method.
+  * [@ungap/essential-symbol](https://github.com/ungap/essential-symbol) providing just its uniqueness.
+  * [@ungap/essential-weakset](https://github.com/ungap/essential-weakset) with simpler logic but widely compatible.
 
 
 ## Regular polyfills
 
   * [@ungap/assign](https://github.com/ungap/assign) compatible with all JS engines
-  * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`
-  * [@ungap/custom-elements](https://github.com/ungap/custom-elements) compatible with IE 11 and many other browsers
-  * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers
-  * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`
+  * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`.
+  * [@ungap/custom-elements](https://github.com/ungap/custom-elements) compatible with IE 11 and many other browsers.
+  * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers.
+  * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`.
   * [@ungap/element-matches](https://github.com/ungap/element-matches) compatible with all JS engines with a DOM env.
-  * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`
-  * [@ungap/event-target](https://github.com/ungap/event-target) compatible with all JS engines
-  * [@ungap/from-entries](https://github.com/ungap/from-entries) compatible with all JS engines
-  * [@ungap/get-own-property-descriptors](https://github.com/ungap/get-own-property-descriptors) compatible with all JS engines
-  * [@ungap/global-this](https://github.com/ungap/global-this) compatible with all JS engines
-  * [@ungap/has-own](https://github.com/ungap/has-own) compatible with all JS engines
-  * [@ungap/import-node](https://github.com/ungap/import-node) compatible with all JS engines
-  * [@ungap/insert-after](https://github.com/ungap/insert-after) compatible with all JS engines
-  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines
-  * [@ungap/is-connected](https://github.com/ungap/is-connected) compatible with all JS engines
-  * [@ungap/item](https://github.com/ungap/item) compatible with all JS engines
-  * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global
-  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines
+  * [@ungap/event](https://github.com/ungap/event) with double fallback through `CustomEvent`.
+  * [@ungap/event-target](https://github.com/ungap/event-target) compatible with all JS engines.
+  * [@ungap/from-entries](https://github.com/ungap/from-entries) compatible with all JS engines.
+  * [@ungap/get-own-property-descriptors](https://github.com/ungap/get-own-property-descriptors) compatible with all JS engines.
+  * [@ungap/global-this](https://github.com/ungap/global-this) compatible with all JS engines.
+  * [@ungap/has-own](https://github.com/ungap/has-own) compatible with all JS engines.
+  * [@ungap/import-node](https://github.com/ungap/import-node) compatible with all JS engines.
+  * [@ungap/insert-after](https://github.com/ungap/insert-after) compatible with all JS engines.
+  * [@ungap/is-array](https://github.com/ungap/is-array) compatible with all JS engines.
+  * [@ungap/is-connected](https://github.com/ungap/is-connected) compatible with all JS engines.
+  * [@ungap/item](https://github.com/ungap/item) compatible with all JS engines.
+  * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global.
+  * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines.
   * [@ungap/node-contains](https://github.com/ungap/node-contains) `Element.contains` compatible with all JS engines with a DOM env.
   * [@ungap/own-keys](https://github.com/ungap/own-keys) `Reflect.ownKeys` compatible with all JS engines.
-  * [@ungap/promise-any](https://github.com/ungap/promise-any) compatible with all JS engines
-  * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines
-  * [@ungap/remove](https://github.com/ungap/remove) compatible with all JS engines
-  * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines
-  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines
-  * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines
-  * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines
-  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines
-  * [@ungap/trim-start](https://github.com/ungap/trim-start) compatible with all JS engines
-  * [@ungap/trim-end](https://github.com/ungap/trim-end) compatible with all JS engines
-  * [@ungap/url-search-params](https://github.com/ungap/url-search-params) compatible with all JS engines
-  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines
-  * [@ungap/weakrefs](https://github.com/ungap/weakrefs) `WeakRef` and `FinalizationGroup` compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
-  * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_)
+  * [@ungap/promise-any](https://github.com/ungap/promise-any) compatible with all JS engines.
+  * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines.
+  * [@ungap/random-uuid](https://github.com/ungap/random-uuid) compatible with IE11+ and NodeJS.
+  * [@ungap/remove](https://github.com/ungap/remove) compatible with all JS engines.
+  * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines.
+  * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines.
+  * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines.
+  * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines.
+  * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines.
+  * [@ungap/trim-start](https://github.com/ungap/trim-start) compatible with all JS engines.
+  * [@ungap/trim-end](https://github.com/ungap/trim-end) compatible with all JS engines.
+  * [@ungap/url-search-params](https://github.com/ungap/url-search-params) compatible with all JS engines.
+  * [@ungap/weakmap](https://github.com/ungap/weakmap) compatible with all JS engines.
+  * [@ungap/weakrefs](https://github.com/ungap/weakrefs) `WeakRef` and `FinalizationGroup` compatible with any engine that already has a `WeakMap` (i.e. _IE11+_).
+  * [@ungap/weakset](https://github.com/ungap/weakset) compatible with any engine that already has a `WeakMap` (i.e. _IE11+_).
 
 
 ## Polyfilled utilities
 
 Ungap utilities are meant to simplify cross browser development without the bloat of a whole polyfill.
 
-  * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>
-  * [@ungap/custom-elements-new](https://github.com/ungap/custom-elements-new#readme) to use `CustomElement.new()` instead of `new CustomElement()` due WebKit/Safari built-in extends caveat
+  * [@ungap/create-content](https://github.com/ungap/create-content) compatible with all JS engines <sup><sub>(backend via basichtml or others)</sub></sup>.
+  * [@ungap/custom-elements-new](https://github.com/ungap/custom-elements-new#readme) to use `CustomElement.new()` instead of `new CustomElement()` due WebKit/Safari built-in extends caveat.
 
 ## Plugins to remove unnecessary bloat
 
@@ -116,7 +117,7 @@ If you are targeting modern browsers only, you might want to exclude some unnece
 Following a list of plugins which aim is to address those cases:
 
   * [babel-plugin-remove-ungap](https://github.com/cfware/babel-plugin-remove-ungap) provides the ability to arbitrarily exclude polyfills through tree-shaking, an awesome tool from [coreyfarrell](https://github.com/coreyfarrell) ♥
-  * [@ungap/degap](https://github.com/ungap/degap#ungapdegap) to make any module either a no-op, just the native version, or the simplified utility (as in element-matches case)
+  * [@ungap/degap](https://github.com/ungap/degap#ungapdegap) to make any module either a no-op, just the native version, or the simplified utility (as in element-matches case).
 
 
 ## License
@@ -132,11 +133,11 @@ In order to do so, please take any already available module as example of how to
 
 The main guideline though, can be summarized as such:
 
-  * the entry point is the root `./index.js`
-  * the ESM module is generated in `./esm/index.js`
-  * the CJS module is generated in `./cjs/index.js`
-  * you cannot use any transpiler
-  * you might use some bundler as long as the tested code is the one generated by such bundler
+  * the entry point is the root `./index.js`.
+  * the ESM module is generated in `./esm/index.js`.
+  * the CJS module is generated in `./cjs/index.js`.
+  * you cannot use any transpiler.
+  * you might use some bundler as long as the tested code is the one generated by such bundler.
 
 I have personally no interest in enforcing any specific linting rule or code style, as long as common sense and good practices are part of the code.
 

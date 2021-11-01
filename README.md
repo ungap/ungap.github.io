@@ -92,6 +92,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/remove](https://github.com/ungap/remove) compatible with all JS engines.
   * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines.
   * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines.
+  * [@ungap/structured-clone](https://github.com/ungap/structured-clone) compatible with ES2015+ engines only.
   * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines.
   * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines.
   * [@ungap/trim](https://github.com/ungap/trim) compatible with all JS engines.

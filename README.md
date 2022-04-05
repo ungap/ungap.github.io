@@ -85,6 +85,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global.
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines.
   * [@ungap/node-contains](https://github.com/ungap/node-contains) `Element.contains` compatible with all JS engines with a DOM env.
+  * [@ungap/once](https://github.com/ungap/once) `Function.prototype.once` compatible with modern JS engines.
   * [@ungap/own-keys](https://github.com/ungap/own-keys) `Reflect.ownKeys` compatible with all JS engines.
   * [@ungap/promise-any](https://github.com/ungap/promise-any) compatible with all JS engines.
   * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines.

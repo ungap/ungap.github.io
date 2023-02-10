@@ -89,10 +89,11 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/own-keys](https://github.com/ungap/own-keys) `Reflect.ownKeys` compatible with all JS engines.
   * [@ungap/promise-any](https://github.com/ungap/promise-any) compatible with all JS engines.
   * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines.
+  * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines.
   * [@ungap/random-uuid](https://github.com/ungap/random-uuid) compatible with IE11+ and NodeJS.
   * [@ungap/remove](https://github.com/ungap/remove) compatible with all JS engines.
-  * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines.
   * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines.
+  * [@ungap/set-methods](https://github.com/ungap/set-methods) compatible with ES2015 engines.
   * [@ungap/structured-clone](https://github.com/ungap/structured-clone) compatible with ES2015+ engines only.
   * [@ungap/template-literal](https://github.com/ungap/template-literal) compatible with all JS engines.
   * [@ungap/template-tag-arguments](https://github.com/ungap/template-tag-arguments) compatible with all JS engines.

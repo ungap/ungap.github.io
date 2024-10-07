@@ -22,7 +22,7 @@ The constrains per module are the following:
   * mandatory 100% code coverage through all possible NodeJS hacks to ensure every part of the code that has a meaning works as expected (some meaningless part can be skipped but functionalities must be ensured).
   * every module is stand-alone, allowing incremental patch or polyfilling.
   * modules should be bundlers and transpilers resistant to avoid any possible, production code, surprise <sup><sub>[1]</sub></sup>.
-  
+
 <sup><sub>[1]</sub></sup> <sup><sub>as example: [stripped out features detections](https://twitter.com/WebReflection/status/1065665486233448449)</sub></sup>
 
 
@@ -67,6 +67,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
 
   * [@ungap/assign](https://github.com/ungap/assign) compatible with all JS engines
   * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`.
+  * [@ungap/bytes](https://github.com/ungap/bytes) compatible with engines that provide `Blob`, `Request` and `Response` classes.
   * [@ungap/custom-elements](https://github.com/ungap/custom-elements) compatible with IE 11 and many other browsers.
   * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers.
   * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`.

@@ -93,6 +93,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/promise-all-settled](https://github.com/ungap/promise-all-settled) compatible with all JS engines.
   * [@ungap/queue-microtask](https://github.com/ungap/queue-microtask) compatible with all JS engines.
   * [@ungap/random-uuid](https://github.com/ungap/random-uuid) compatible with IE11+ and NodeJS.
+  * [@ungap/raw-json](https://github.com/ungap/raw-json) compatible with modern engines only.
   * [@ungap/remove](https://github.com/ungap/remove) compatible with all JS engines.
   * [@ungap/set](https://github.com/ungap/set) compatible with all JS engines.
   * [@ungap/set-methods](https://github.com/ungap/set-methods) compatible with ES2015 engines.

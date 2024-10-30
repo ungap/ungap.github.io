@@ -68,6 +68,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/assign](https://github.com/ungap/assign) compatible with all JS engines
   * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`.
   * [@ungap/bytes](https://github.com/ungap/bytes) compatible with engines that provide `Blob`, `Request` and `Response` classes.
+  * [@ungap/compression-stream](https://github.com/ungap/compression-stream) compatible with modern engines only and mostly targeting *Bun*.
   * [@ungap/custom-elements](https://github.com/ungap/custom-elements) compatible with IE 11 and many other browsers.
   * [@ungap/custom-event](https://github.com/ungap/custom-event) compatible with all browsers.
   * [@ungap/dom-iterable](https://github.com/ungap/dom-iterable) compatible with all engines that have a global `Symbol`.

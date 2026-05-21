@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ungap/ungap.github.io#readme",
   "devDependencies": {
-    "http-server": "^0.12.3",
-    "showdown": "^1.9.1"
+    "http-server": "^14.1.1",
+    "showdown": "^2.1.0"
   }
 }

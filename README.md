@@ -67,6 +67,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
 
   * [@ungap/assign](https://github.com/ungap/assign) compatible with all JS engines
   * [@ungap/array-iterator](https://github.com/ungap/array-iterator) compatible with all engines that have a global `Symbol`.
+  * [@ungap/at](https://github.com/ungap/at) *String* and *Array* `at` method.
   * [@ungap/bytes](https://github.com/ungap/bytes) compatible with engines that provide `Blob`, `Request` and `Response` classes.
   * [@ungap/compression-stream](https://github.com/ungap/compression-stream) compatible with modern engines only and mostly targeting *Bun*.
   * [@ungap/custom-elements](https://github.com/ungap/custom-elements) compatible with IE 11 and many other browsers.
@@ -86,6 +87,7 @@ The main benefit of the essential modules is their size, simplicity, or even per
   * [@ungap/item](https://github.com/ungap/item) compatible with all JS engines.
   * [@ungap/json](https://github.com/ungap/json) fixes `\u2028|9` in all JS engines with a `JSON` global.
   * [@ungap/map](https://github.com/ungap/map) compatible with all JS engines.
+  * [@ungap/map-extensions](https://github.com/ungap/map-extensions) `getOrInsert` and `getOrInsertComputed` for both *Map* and *WeakMap*
   * [@ungap/new](https://github.com/ungap/new) an extension to allow `Class.new(...args)` instead of `new Class(...args)`
   * [@ungap/node-contains](https://github.com/ungap/node-contains) `Element.contains` compatible with all JS engines with a DOM env.
   * [@ungap/once](https://github.com/ungap/once) `Function.prototype.once` compatible with modern JS engines.
